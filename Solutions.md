@@ -54,7 +54,7 @@ pipeline {
                     # enter app directory, because that's where package.json is located
                     dir("app") {
                         # update application version in the package.json file with one of these release types: patch, minor or major
-                        # this will commit the version update and ensure not git commands are run in the background
+                        # This command updates the minor version in package.json and ensures no Git commands are executed in the background, preventing automatic commits or tags in your Jenkins Pipeline
                         sh "npm version minor —no-git-tag-version"
 
                         # read the updated version from the package.json file
