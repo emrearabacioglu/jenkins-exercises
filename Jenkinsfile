@@ -50,7 +50,7 @@ pipeline {
                         sh 'git config --global user.name "jenkins"'
                         sh 'git remote set-url origin https://$USER:$PASS@github.com/emrearabacioglu/jenkins-exercises.git'
                         sh 'git add .'
-                        sh 'git commit -m "version bump"'
+                        sh 'git commit -m "ci: version bump [skip ci]"'
                         sh 'git pull --rebase origin master'
                         sh 'git push origin HEAD:master'
                     }
