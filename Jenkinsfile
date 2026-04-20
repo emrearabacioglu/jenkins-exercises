@@ -2,6 +2,7 @@ pipeline {
     agent any    
     tools {
         nodejs "my-nodejs"
+        
     }
     stages {
         stage('increment version'){
