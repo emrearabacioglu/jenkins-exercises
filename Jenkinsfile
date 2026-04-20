@@ -1,9 +1,5 @@
 pipeline {
-    agent any
-    triggers {
-        githubPush()
-    }
-    
+    agent any    
     tools {
         nodejs "my-nodejs"
     }
