@@ -3,6 +3,7 @@ pipeline {
     triggers {
         githubPush()
     }
+    
     tools {
         nodejs "my-nodejs"
     }
