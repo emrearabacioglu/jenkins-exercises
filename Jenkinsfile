@@ -15,6 +15,7 @@ pipeline {
                         sh "npm version minor --no-git-tag-version"
                         def packageJson = readJSON file: 'package.json'
                         def version = packageJson.version
+                        
                         env.IMAGE_NAME = "$version-$BUILD_NUMBER"
                     }
                 }
