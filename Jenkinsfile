@@ -51,8 +51,8 @@ pipeline {
                         sh 'git remote set-url origin https://$USER:$PASS@github.com/emrearabacioglu/jenkins-exercises.git'
                         sh 'git add .'
                         sh 'git commit -m "version bump"'
-                        sh 'git pull --rebase origin jenkins-jobs'
-                        sh 'git push origin HEAD:jenkins-jobs'
+                        sh 'git pull --rebase origin master'
+                        sh 'git push origin HEAD:master'
                     }
                 }
             }
