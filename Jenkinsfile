@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        nodejs "node"
+        nodejs "my-nodejs"
     }
     stages {
         stage('increment version'){
